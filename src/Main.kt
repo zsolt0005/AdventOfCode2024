@@ -2,7 +2,7 @@ import kotlin.system.measureTimeMillis
 
 fun main()
 {
-    val day = Day09()
+    val day = Day10()
 
     println("[Part One]")
     val partOneELapsed = measureTimeMillis {
