@@ -62,7 +62,8 @@ class Day07
         }
     }
 
-    private fun generateOperatorCombinations(size: Int, combineOperator: Boolean): List<List<String>> {
+    private fun generateOperatorCombinations(size: Int, combineOperator: Boolean): List<List<String>>
+    {
         val combinations = mutableListOf<List<String>>()
 
         fun helper(current: List<String>, remaining: Int)
@@ -82,7 +83,8 @@ class Day07
         return combinations
     }
 
-    private fun parseEquations(text: String): MutableList<Equation> {
+    private fun parseEquations(text: String): MutableList<Equation>
+    {
         val equations = mutableListOf<Equation>()
         val lines = text.lines()
 
