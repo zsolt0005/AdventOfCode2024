@@ -16,4 +16,11 @@ object FileUtils
         val filePath = Paths.get(projectDirAbsolutePath, "resources", path)
         return File(filePath.toString()).readText()
     }
+
+    fun saveText(path: String, text: String)
+    {
+        val projectDirAbsolutePath = Paths.get("").toAbsolutePath().toString()
+        val filePath = Paths.get(projectDirAbsolutePath, "resources", path)
+        File(filePath.toString()).writeText(text)
+    }
 }
